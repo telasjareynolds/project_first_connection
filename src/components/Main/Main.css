@@ -1,0 +1,105 @@
+.main {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__intro {
+  position: relative;
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.main__intro-img {
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+  display: block;
+}
+
+.main__intro-box {
+  padding: 30px;
+  background-color: orange;
+}
+
+.main__intro-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(270deg, #00000000 50%, #000000 100%);
+  opacity: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main__intro-content {
+  padding: 100px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.main__intro-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #44e75b;
+}
+
+.main__intro-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.main__intro-btn {
+  padding: 11px 30px;
+  background-color: #44e75b;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main__intro-btn:hover {
+  background-color: #0d5a91;
+}
+
+@media screen and (max-width: 750px) {
+  .main__intro-title {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #44e75b;
+  }
+  
+  .main__intro-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .main__intro-btn {
+    padding: 6px 12px;
+    background-color: #44e75b;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .main__intro-content {
+    padding: 20px;
+  }
+
+  .main__intro-box {
+    padding: 15px;
+  }
+}
