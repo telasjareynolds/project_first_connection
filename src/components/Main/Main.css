@@ -73,6 +73,7 @@
   background-color: #0d5a91;
 }
 
+
 @media screen and (max-width: 750px) {
   .main__intro-title {
     font-size: 12px;
