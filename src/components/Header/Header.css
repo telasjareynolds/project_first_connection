@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  padding: 25px 15px;
+  padding: 25px 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -9,7 +9,7 @@
   min-width: 161px;
   width: fit-content;
   height: 47px;
-  padding-right: 10px;
+  padding: 0 20px;
 }
 
 .header__links {
@@ -164,11 +164,11 @@
     width: 54px;
     height: 54px;
     overflow: auto;
+    margin: 0 20px;
   }
 
   .header__links-mobile {
     visibility: visible;
-  
   }
 
   .header__link-mobile {
@@ -183,10 +183,8 @@
     align-items: center;
     gap: 3px;
   }
-  
+
   .header__about-ext {
     border-top: none;
   }
 }
-
-

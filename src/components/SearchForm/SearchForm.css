@@ -5,7 +5,7 @@
   max-width: 300px; 
   flex-wrap: nowrap;
   justify-content: flex-end; 
-  margin-right: 25px;
+  padding: 0 20px;
 }
 
 .search-form__input {
