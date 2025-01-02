@@ -106,6 +106,7 @@ function Main() {
           </div>
         </div>
       </section>
+      <div className="main__subscribe-box"><div className="main__subscribe-overlay"></div></div>
     </main>
   );
 }

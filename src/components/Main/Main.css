@@ -70,6 +70,10 @@
 }
 
 .main__intro-btn:hover {
+  transform: translateX(5px);
+}
+
+.main__intro-btn:hover {
   background-color: #0d5a91;
 }
 
@@ -94,6 +98,11 @@
   margin: 0px 6px;
   padding: 15px;
   color: white;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.332);
+}
+
+.main__childcare-card:hover {
+  transform: scale(1.1);
 }
 
 .main__childcare-red {
@@ -125,6 +134,11 @@
   padding: 6px 12px;
   font-size: 16px;
   border-radius: 20px;
+}
+
+.main__childcare-btn:hover {
+  transform: translateX(5px);
+  color: black;
 }
 
 .btn-green {
@@ -172,7 +186,7 @@
   width: 37px;
   height: 28px;
   margin-top: 15px;
-} 
+}
 
 .main__support-title {
   font-size: 25px;
@@ -186,6 +200,28 @@
 
 .main__support-text {
   text-wrap: wrap;
+  color: rgb(95, 95, 95);
+}
+
+.main__subscribe-box {
+  background: url("https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/07/ca_childcare_101520istock.jpg")
+    center no-repeat;
+  background-size: cover;
+  padding: 100px;
+  position: relative;
+}
+
+.main__subscribe-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #ec8d1c;
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -247,12 +283,16 @@
     flex-wrap: wrap;
   }
 
+  .main__childcare-card:hover {
+    transform: scale(1);
+  }
+
   .main__childcare-text {
     font-size: 12px;
     margin: 10px 0;
   }
 
-  /* Support section */ 
+  /* Support section */
   .main__support-heading {
     text-align: center;
     font-weight: bold;
@@ -261,7 +301,7 @@
   }
 
   .main__support-card {
-    margin: 10px;   
+    margin: 10px;
     flex-wrap: wrap;
     gap: 10px;
   }
@@ -279,10 +319,12 @@
 
   .main__support-card:nth-child(2) {
     flex-direction: column-reverse;
- align-items: flex-start;
- justify-items: flex-start;
- justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .main__subscribe-box {
+    padding: 60px;
   }
 }
-
-

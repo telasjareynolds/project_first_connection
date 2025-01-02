@@ -1,0 +1,111 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 15px;
+  background-color: #f6f8fb;
+}
+
+.footer__cards {
+  display: flex;
+  width: 50%;
+}
+
+.footer__card {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.726);
+  margin: 10px;
+  width: 50%;
+}
+
+.footer__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__left-text {
+  margin-top: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.129);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.46);
+  width: 100%;
+}
+
+.footer__privacy-policy {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.46);
+}
+
+.footer__privacy-policy:hover {
+  color: #ff004f;
+  font-size: 14px;
+  transform: translateY(-2px);
+}
+
+.footer__card-heading {
+  font-size: 14px;
+}
+
+.footer__card-text {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.46);
+  padding: 3px 0;
+}
+
+.footer__card-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__icon {
+  padding-right: 10px;
+  width: 14px;  
+  height: 13px;
+}
+
+.footer__facebook {
+  width: 33px;
+  height: 33px;
+}
+
+.footer__facebook:hover {
+
+  font-size: 20px;
+  transform: translateY(-2px);
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 770px) {
+  .footer {
+flex-direction: column;
+  }
+
+  .footer__left-text {
+    font-size: 12px;
+  }
+
+  .footer__card-heading {
+    font-size: 12px;
+  }
+
+  .footer__card-text {
+    font-size: 12px;
+  }
+
+  .footer__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer__card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .footer__card:nth-child(2) {
+    margin: 0;
+  }
+}

@@ -29,6 +29,7 @@
 
 .header__link:hover {
   color: #0f70b4;
+  transform: translateX(2px);
 }
 
 .header__dropdown-container {
@@ -118,6 +119,7 @@
 
 .header__link-about:hover {
   color: #0f70b4;
+  transform: translateX(2px);
 }
 
 .header__menu-close {
