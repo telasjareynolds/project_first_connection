@@ -1,0 +1,371 @@
+.parents {
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+}
+
+.parents__intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parents__intro-img {
+  background: url("https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/09/Group-29@2x-1.png")
+    no-repeat center center;
+  background-size: 150%; /* Start with a zoomed-in effect */
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: block;
+  transition: background-size 0.3s ease; /* Smooth transition when resizing */
+}
+
+.parents__intro-box {
+  padding: 30px;
+  background-color: orange;
+}
+
+.parents__intro-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00000069;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.parents__intro-content {
+  padding: 50px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.parents__intro-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.parents__intro-heading {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.parents__intro-btn {
+  padding: 11px 30px;
+  background-color: #44e75b;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.parents__intro-btn:hover {
+  transform: translateX(5px);
+  background-color: #0d5a91;
+}
+
+/* Section for parenting tips*/
+.parents__tips {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-items: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.parents__tips-questions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.parents__tips-questions {
+  display: flex;
+}
+
+.parents__tips-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #365989;
+  margin-top: 0;
+}
+
+.parents__tips-subheading {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(203, 3, 203);
+}
+
+.parents__tips-question {
+  color: rgb(203, 3, 203);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.parents__tips-questions-text {
+  font-size: 14px;
+}
+
+.parents__tips-img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border: none;
+  padding: 30px;
+}
+
+.parents__tips-container {
+  padding: 30px;
+}
+
+/* Parenting essential section */
+.parents__essentials {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(226, 226, 226);
+}
+
+.parents__essentials-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.parents__essentials-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 40%;
+}
+
+.parents__essentials-list {
+  padding-left: 20px;
+  font-size: 14px;
+  list-style-image: url(../../assets/list-circle.png);
+}
+
+.parents__essentials-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.parents__essentials-list-item {
+  font-weight: 500;
+}
+
+/* CDC section */
+.parents__cdc {
+  padding: 0;
+  margin: 50px 20px;
+}
+
+.parents__cdc-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.parents__cdc-img {
+  width: 100%;
+  padding: 0 0 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.parents__cdc-card {
+  padding: 50px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 15px;
+  word-wrap: break-word; 
+  word-break: break-word; 
+  overflow-wrap: break-word;
+}
+
+.green-card {
+  background-color: #36ad47;
+  color: white;
+}
+
+.blue-card {
+  background-color: #0f70b4;
+  color: white;
+}
+
+.parents__cdc-container {
+  border: 1px black solid;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  max-height: fit-content;
+  text-align: center;
+}
+
+.parents__cdc-link {
+text-decoration: none;
+ text-align: center;
+ color: #0F70B4;
+ font-weight: bold;
+ border-bottom: 1px solid #0F70B4;
+}
+
+.parents__cdc-doc {
+  color: white;
+  text-decoration: none;
+ }
+
+ .parents__cdc-link:hover {
+  text-decoration: underline;
+  color: red;
+  transform: translateX(2px);
+ }
+
+ .parents__cdc-doc:hover {
+   text-decoration: underline;
+   color: #0f70b4;
+   transform: translateX(2px);
+ }
+
+@media screen and (max-width: 1000px) {
+  .parents__tips {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .parents__tips-container {
+    padding: 10px;
+  }
+
+  .parents__tips-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .parents__intro-img {
+    height: 27vh;
+  }
+
+  .parents__intro-content {
+    padding: 20px;
+  }
+
+  .parents__intro-title {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+  }
+
+  .parents__intro-heading {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .parents__intro-btn {
+    padding: 8px 23px;
+    font-size: 12px;
+  }
+
+  /* Section for parenting tips*/
+  .parents__tips {
+    padding: 0;
+    margin: 0;
+  }
+
+  .parents__tips-container {
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  .parents__tips-heading {
+    font-size: 22px;
+  }
+
+  .parents__tips-subheading {
+    font-size: 22px;
+  }
+
+  .parents__tips-question {
+    font-size: 16px;
+  }
+
+  .parents__tips-checkmark {
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+  }
+
+  .parents__tips-questions-text{
+    margin: 0;
+  }
+
+  /* Parenting essential section */
+
+  .parents__essentials {
+    padding: 0;
+  }
+
+  .parents__essentials-cards {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .parents__essentials-card {
+    max-width: 100%;
+    padding: 10px 10px;
+  }
+
+  .parents__essentials-text {
+    font-size: 14px;
+  }
+
+  /* CDC section */
+  .parents__cdc-cards {
+    flex-direction: column-reverse;
+  }
+
+  .parents__cdc-text {
+    font-size: 14px;
+    text-wrap: wrap;
+  }
+
+  .parents__cdc-card {
+    max-width: fit-content;
+  }
+
+  .parents__cdc-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+}

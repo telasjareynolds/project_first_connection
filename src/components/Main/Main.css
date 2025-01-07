@@ -3,6 +3,7 @@
   position: relative;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
 }
 
 .main__intro {
@@ -71,9 +72,6 @@
 
 .main__intro-btn:hover {
   transform: translateX(5px);
-}
-
-.main__intro-btn:hover {
   background-color: #0d5a91;
 }
 

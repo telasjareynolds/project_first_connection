@@ -61,7 +61,7 @@
 
 .footer__icon {
   padding-right: 10px;
-  width: 14px;  
+  width: 14px;
   height: 13px;
 }
 
@@ -71,7 +71,6 @@
 }
 
 .footer__facebook:hover {
-
   font-size: 20px;
   transform: translateY(-2px);
   width: 36px;
@@ -80,7 +79,7 @@
 
 @media screen and (max-width: 770px) {
   .footer {
-flex-direction: column;
+    flex-direction: column;
   }
 
   .footer__left-text {
@@ -89,6 +88,7 @@ flex-direction: column;
 
   .footer__card-heading {
     font-size: 12px;
+    padding: 0 10px;
   }
 
   .footer__card-text {
@@ -104,8 +104,21 @@ flex-direction: column;
   .footer__card {
     width: 100%;
     margin: 20px 0;
+    padding: 5px;
   }
   .footer__card:nth-child(2) {
     margin: 0;
+  }
+
+  .footer__card-container {
+    padding: 0 10px;
+  }
+
+  .footer__card-container:last-child {
+    padding: 0 10px 15px;
+  }
+
+  .footer__facebook {
+    padding: 0 10px 15px;
   }
 }

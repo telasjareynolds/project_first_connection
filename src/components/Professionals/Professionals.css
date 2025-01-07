@@ -1,0 +1,279 @@
+.professionals {
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+}
+
+.professionals__intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.professionals__intro-img {
+  background: url("https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/09/Group-29@2x-1.png")
+    no-repeat center center;
+  background-size: 150%; /* Start with a zoomed-in effect */
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: block;
+  transition: background-size 0.3s ease; /* Smooth transition when resizing */
+}
+
+.professionals__intro-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00000069;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.professionals__intro-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  color: white;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+.professionals__intro-btn {
+  padding: 11px 30px;
+  background-color: #44e75b;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.professionals__intro-btn:hover {
+  transform: translateX(5px);
+  background-color: #0d5a91;
+}
+
+/* training section */
+.professionals__training {
+  padding: 0 15px;
+  margin: 50px 20px;
+  width: 100%;
+  max-width: fit-content;
+}
+
+.professionals__training-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.professionals__training-img {
+  width: 100%;
+  padding: 0 0 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.professionals__training-card {
+  padding: 30px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.green-card {
+  background-color: #36ad47;
+  color: white;
+}
+
+.blue-card {
+  background-color: #0f70b4;
+  color: white;
+}
+
+.professionals__training-left {
+  width: 40%;
+}
+
+.professionals__training-link {
+  text-decoration: none;
+  text-align: center;
+  color: #0f70b4;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.professionals__training-link:hover {
+  text-decoration: underline;
+  color: red;
+  transform: translateX(2px);
+}
+
+.professionals__training-container {
+  width: 40%;
+  border: 1px rgba(0, 0, 0, 0.388) solid;
+  border-radius: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+  text-wrap: wrap;
+  height: fit-content;
+}
+
+.professionals__training-box {
+  background-color: #ec8d1c;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.professionals__training-list {
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  list-style-image: url(../../assets/list-circle.png);
+}
+
+.professionals__training-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.professionals__training-list-item {
+  font-weight: 500;
+  padding: 5px;
+}
+
+/* Parenting material section */
+.professionals__material-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 100%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.237);
+  margin-bottom: 25px;
+}
+
+.professionals__material {
+  margin: 50px;
+}
+
+.professionals__material-text {
+line-height: 1.3;
+}
+
+.professionals__material-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.professionals__material-list {
+  list-style-image: url(../../assets/list-circle.png);
+}
+
+.professionals__material-list-item {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #36ad47;
+}
+
+.professionals__material-list-text {
+  color: black;
+  font-size: 12px;
+  margin: 0;
+  padding-top: 5px;
+  line-height: 1.3;
+}
+
+.professionals__material-list-paragraph {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.professionals__material-list-item:first-of-type {
+  padding-top: 18px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .professionals__intro-overlay {
+    align-items: flex-end;
+  }
+
+  .professionals__intro-img {
+    height: 27vh;
+  }
+
+  .professionals__intro-heading {
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 20px;
+  }
+
+  /* Section for training info*/
+
+  .professionals__training-box {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .professionals__training-left {
+    width: 100%;
+  }
+
+  .professionals__training-container {
+    width: 100%;
+
+  }
+
+  .professionals__training-cards {
+    flex-direction: column;
+  }
+
+  .professionals__training-text {
+    font-size: 14px;
+    text-wrap: wrap;
+  }
+
+  .professionals__training-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Parenting material section */
+
+  .professionals__material {
+margin: 30px 15px;
+  }
+
+  .professionals__material-heading {
+   margin: 0;
+   font-size: 22px;
+  }
+
+  .professionals__material-card {
+    max-width: 100%;
+    padding: 10px 10px;
+  }
+
+  .professionals__material-text {
+    font-size: 14px;
+  }
+}
