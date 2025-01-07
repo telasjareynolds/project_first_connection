@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import Parents from "../Parents/Parents";
 import Professionals from "../Professionals/Professionals";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
+import Partners from "../Partners/Partners";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/parents" element={<Parents />} />
         <Route path="/professionals" element={<Professionals />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
+        <Route path="/partners" element={<Partners />} />
       </Routes> 
       <Footer />
     </div>

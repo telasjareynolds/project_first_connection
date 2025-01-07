@@ -60,22 +60,43 @@ function Header() {
                 </div>
                 <Link
                   to="/what-we-do"
-                  onClick={closeMenu} className="header__link-mobile header__about-ext"
+                  onClick={closeMenu}
+                  className="header__link-mobile header__about-ext"
                 >
                   What We Do
                 </Link>
               </div>
 
-              <Link to="/parents" onClick={closeMenu} className="header__link-mobile">
+              <Link
+                to="/parents"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
                 Parents
               </Link>
-              <Link to="/professionals" onClick={closeMenu} className="header__link-mobile">
+              <Link
+                to="/professionals"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
                 Childcare Professionals
               </Link>
-              <Link onClick={closeMenu} className="header__link-mobile">Partners</Link>
-              <Link onClick={closeMenu} className="header__link-mobile">Contact</Link>
-              <Link onClick={closeMenu} className="header__link-mobile">Privacy Policy</Link>
-              <Link onClick={closeMenu} className="header__link-mobile">Food Security</Link>
+              <Link
+                to="/partners"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
+                Partners
+              </Link>
+              <Link onClick={closeMenu} className="header__link-mobile">
+                Contact
+              </Link>
+              <Link onClick={closeMenu} className="header__link-mobile">
+                Privacy Policy
+              </Link>
+              <Link onClick={closeMenu} className="header__link-mobile">
+                Food Security
+              </Link>
             </div>
           </>
         )}
@@ -99,8 +120,12 @@ function Header() {
           <Link to="/parents" className="header__link">
             Parents
           </Link>
-          <Link to="/professionals" className="header__link">Childcare Professionals</Link>
-          <Link className="header__link">Partners</Link>
+          <Link to="/professionals" className="header__link">
+            Childcare Professionals
+          </Link>
+          <Link to="/partners" className="header__link">
+            Partners
+          </Link>
           <Link className="header__link">Contact</Link>
           <Link className="header__link">Privacy Policy</Link>
           <Link className="header__link">Food Security</Link>

@@ -1,0 +1,138 @@
+.partners {
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+}
+
+.partners__intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners__intro-img {
+  background: url("https://firstconnectionsva.yobo.dev/wp-content/uploads/2024/01/image.png")
+    no-repeat center center;
+  background-size: 150%; /* Start with a zoomed-in effect */
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: block;
+  transition: background-size 0.3s ease; /* Smooth transition when resizing */
+}
+
+.partners__intro-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00000069;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.partners__intro-content {
+  padding: 50px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.partners__intro-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.partners__intro-heading {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+/* partners cards */
+.partners__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 15px;
+}
+
+.partners__card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.263);
+  border-radius: 16px;
+  width: 60%;
+}
+
+.partners__card-heading {
+  font-size: 40px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.partners__card-subheading {
+  font-size: 16px;
+  color: #36ad36;
+  font-weight: bold;
+  padding: 0 20px;
+  text-wrap: wrap;
+}
+
+.partners__card-list {
+  list-style-type: none;
+  padding: 0;
+}
+.partners__card-list-item {
+  padding: 10px 20px;
+  border-top: 1px solid #8888885c;
+  font-size: 14px;
+  color: #888888e1;
+}
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .partners__intro-img {
+    height: 28vh;
+  }
+
+  .partners__intro-content {
+    padding: 20px;
+  }
+
+  .partners__intro-title {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+  }
+
+  .partners__intro-heading {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* partner cards */
+  .partners__card {
+    width: 100%;
+  }
+
+  .partners__card-heading {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .partners__card-subheading {
+    font-size: 14px;
+  }
+}
