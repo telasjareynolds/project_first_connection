@@ -1,0 +1,189 @@
+.contact {
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+}
+
+.contact__intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__intro-img {
+  background: url("https://firstconnectionsva.yobo.dev/wp-content/uploads/2024/01/image.png")
+    no-repeat center center;
+  background-size: 150%; /* Start with a zoomed-in effect */
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: block;
+  transition: background-size 0.3s ease; /* Smooth transition when resizing */
+}
+
+.contact__intro-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00000069;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact__intro-content {
+  padding: 50px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact__intro-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.contact__intro-heading {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+/* contact info section */
+.contact__info {
+  width: 100%;
+}
+
+.contact__info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 30px 15px;
+}
+
+.contact__info-card {
+  background-color: #0F70B4;
+  padding: 30px;
+  border-radius: 16px;
+  min-width: 30%;
+  color: white;
+}
+
+.contact__info-card-heading {
+  font-size: 21px;
+}
+
+.contact__info-card-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* contact map */
+.contact__map {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__map-iframe {
+  border-radius: 16px;
+  margin: 30px 15px;
+  border: rgba(0, 0, 0, 0.504) 1px solid;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+/* contact box */
+.contact__info-box {
+  background: url("https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/07/ca_childcare_101520istock.jpg")
+    center no-repeat;
+  background-size: cover;
+  padding: 100px;
+  position: relative;
+}
+
+.contact_info-box-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #ec8d1c;
+  opacity: 0.8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .contact__intro-img {
+    height: 25vh;
+  }
+
+  .contact__intro-content {
+    padding: 20px;
+  }
+
+  .contact__intro-title {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+  }
+
+  .contact__intro-heading {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* contact info section */
+  .contact__info {
+    padding: 0;
+  }
+
+  .contact__info-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .contact__info-card-heading {
+    font-size: 18px;
+  }
+
+  .contact__info-card-text {
+    font-size: 14px;
+  }
+
+  /* contact map */
+
+  .contact__map-iframe {
+    margin: 15px;
+    width: 100%;
+    max-width: 400px;
+  height: 100%;
+  min-height: 300px;
+  }
+
+  .contact__map {
+margin: 15px;
+  }
+
+  /* contact box */
+  .contact__info-box {
+    padding: 60px;
+  }
+}

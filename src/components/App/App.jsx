@@ -7,7 +7,7 @@ import Parents from "../Parents/Parents";
 import Professionals from "../Professionals/Professionals";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import Partners from "../Partners/Partners";
-
+import Contact from "../Contact/Contact";
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
         <Route path="/professionals" element={<Professionals />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/partners" element={<Partners />} />
-      </Routes> 
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   );

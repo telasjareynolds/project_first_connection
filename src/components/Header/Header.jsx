@@ -88,7 +88,11 @@ function Header() {
               >
                 Partners
               </Link>
-              <Link onClick={closeMenu} className="header__link-mobile">
+              <Link
+                to="/contact"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
                 Contact
               </Link>
               <Link onClick={closeMenu} className="header__link-mobile">
@@ -126,7 +130,9 @@ function Header() {
           <Link to="/partners" className="header__link">
             Partners
           </Link>
-          <Link className="header__link">Contact</Link>
+          <Link to="/contact" className="header__link">
+            Contact
+          </Link>
           <Link className="header__link">Privacy Policy</Link>
           <Link className="header__link">Food Security</Link>
         </div>
