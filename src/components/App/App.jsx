@@ -8,6 +8,8 @@ import Professionals from "../Professionals/Professionals";
 import WhatWeDo from "../WhatWeDo/WhatWeDo";
 import Partners from "../Partners/Partners";
 import Contact from "../Contact/Contact";
+import Privacy from "../Privacy/Privacy";
+import Food from "../Food/Food";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/food" element={<Food />} />
       </Routes>
       <Footer />
     </div>

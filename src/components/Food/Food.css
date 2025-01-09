@@ -1,0 +1,307 @@
+.food {
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+}
+
+.food__intro {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food__intro-img {
+  background-size: 150%; /* Start with a zoomed-in effect */
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: block;
+  transition: background-size 0.3s ease; /* Smooth transition when resizing */
+}
+
+.food__intro-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00000069;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food__intro-content {
+  padding: 50px;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.food__intro-heading {
+  font-size: 48px;
+  margin-bottom: 44px;
+  color: white;
+  font-weight: bold;
+}
+
+.food__intro-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food__intro-flyer {
+  height: 90%;
+  margin: 20px;
+}
+
+.food__intro-list {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.food__intro-list-item {
+  line-height: 20px;
+  padding: 3px 0;
+}
+
+.food__intro-qr {
+  width: 127px;
+  height: 127px;
+}
+
+.food__intro-qr-text {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+/* food info section */
+.food__info {
+  width: 100%;
+}
+
+.food__info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 30px 15px;
+}
+
+.food__info-card {
+  background-color: #0f70b4;
+  padding: 30px;
+  border-radius: 16px;
+  min-width: 30%;
+  color: white;
+}
+
+.food__info-card-heading {
+  font-size: 21px;
+}
+
+.food__info-card-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* food map */
+.food__map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.food__map-iframe {
+  border-radius: 16px;
+  margin: 30px 15px;
+  border: rgba(0, 0, 0, 0.504) 1px solid;
+  min-width: 600px;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+}
+
+.food__map-suffex {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.food__map-hopewell {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.food__map-flyer {
+  background-size: contain;
+  height: 50%;
+  width: 30%;
+  border-radius: 16px;
+}
+
+.food__map-text {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  color: #36AD47;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.food__map-heading {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+@media screen and (max-width: 1200px) {
+  .food__map-iframe {
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .food__intro-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .food__intro-heading {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 10px;
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .food__intro {
+    min-height: fit-content;
+  }
+
+  .food__intro-img {
+    height: 110vh;
+    background-size: cover;
+  }
+
+  .food__intro-content {
+    padding: 20px;
+  }
+
+  .food__intro-overlay {
+    flex-direction: column;
+    width: 100%;
+    min-width: fit-content;
+    min-height: fit-content;
+    justify-content: center;
+    background-color: #000000a5;
+  }
+
+  .food__intro-heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .food__intro-flyer {
+    width: 60%;
+    height: 50%;
+    margin: 0 20px 20px;
+    border-radius: 16px;
+  }
+
+  .food__intro-list {
+    margin: 0;
+    padding: 0;
+    color: white;
+    list-style-type: none;
+  }
+
+  .food__intro-qr {
+    width: 115px;
+    height: 115px;
+  }
+
+  .food__intro-qr-text {
+    font-size: 12px;
+  }
+
+  .food__intro-qr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* food map */
+
+  .food__map-iframe {
+    margin: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    min-height: 300px;
+  }
+
+  .food__map {
+    margin: 15px;
+  }
+
+  .food__map-suffex {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .food__map-hopewell {
+    flex-direction: column;
+    padding: 10px 0 0;
+  }
+
+  .food__map-flyer {
+    background-size: contain;
+    height: 50%;
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .food__intro-flyer {
+    width: 80%;
+    height: 40%;
+  }
+
+  .food__map-iframe {
+    margin: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    min-height: 250px;
+  }
+
+  .food__map-flyer {
+    background-size: contain;
+    height: 50%;
+    width: 100%;
+    border-radius: 16px;
+  }
+}

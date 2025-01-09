@@ -16,7 +16,9 @@ function Footer() {
         />
         <div className="footer__left-text">
           <p className="footer__copyright">Copyright © 2024 FirstConnections</p>
-          <Link className="footer__privacy-policy">Privacy Policy</Link>
+          <Link to="/privacy" className="footer__privacy-policy">
+            Privacy Policy
+          </Link>
         </div>
       </div>
       <div className="footer__cards">

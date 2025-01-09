@@ -3,6 +3,7 @@
   padding: 25px 0;
   display: flex;
   justify-content: space-evenly;
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.321);
 }
 
 .header__logo {

@@ -95,10 +95,18 @@ function Header() {
               >
                 Contact
               </Link>
-              <Link onClick={closeMenu} className="header__link-mobile">
+              <Link
+                to="/privacy"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
                 Privacy Policy
               </Link>
-              <Link onClick={closeMenu} className="header__link-mobile">
+              <Link
+                to="/food"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
                 Food Security
               </Link>
             </div>
@@ -133,8 +141,12 @@ function Header() {
           <Link to="/contact" className="header__link">
             Contact
           </Link>
-          <Link className="header__link">Privacy Policy</Link>
-          <Link className="header__link">Food Security</Link>
+          <Link to="/privacy" className="header__link">
+            Privacy Policy
+          </Link>
+          <Link to="/food" className="header__link">
+            Food Security
+          </Link>
         </div>
         <SearchForm />
       </div>
