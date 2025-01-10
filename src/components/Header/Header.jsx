@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 import SearchForm from "../SearchForm/SearchForm";
 import btnClose from "../../assets/close-button.png";
 
-function Header() {
+function Header({ onSearch }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -148,7 +148,7 @@ function Header() {
             Food Security
           </Link>
         </div>
-        <SearchForm />
+        <SearchForm onSearch={onSearch} />
       </div>
     </header>
   );

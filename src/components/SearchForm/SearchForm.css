@@ -20,7 +20,7 @@
   padding: 0 15px;
   border: none;
   background-color: rgb(234, 234, 234);
-  color: #ccc;
+  color: #1b1b1b;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -51,7 +51,7 @@
 .search-form__reset-btn {
   position: absolute;
   top: 50%;
-  right: 50px;
+  left: 210px;
   transform: translateY(-50%);
   height: 30px;
   width: 40px;
@@ -60,7 +60,7 @@
   background: none;
   font-size: 16px;
   cursor: pointer;
-  color: #ff0000;
+  color: #ff000083;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,5 +80,9 @@
   .search-form__btn {
     height: 30px;
     width: 40px;
+  }
+
+  .search-form__reset-btn {
+    left: 110px;
   }
 }

@@ -2,7 +2,7 @@ import "./SearchForm.css";
 import { useState } from "react";
 import searchIcon from "../../assets/search-icon.png";
 
-function SearchForm({ onSearch, resetSearch }) {
+function SearchForm({ onSearch }) {
   const [query, setQuery] = useState("");
 
   function handleSearchChange(e) {
@@ -11,12 +11,11 @@ function SearchForm({ onSearch, resetSearch }) {
 
   function handleSearch(e) {
     e.preventDefault();
-    onSearch(query);
+    onSearch(query); // Assume `onSearch` handles navigation to another page
   }
 
   function clearSearch(e) {
     e.preventDefault();
-    resetSearch();
     setQuery("");
   }
 
