@@ -16,7 +16,6 @@ function App() {
   const navigate = useNavigate();
 
   function navigateToResults(query) {
-    // Example navigation logic using React Router
     navigate(`/search-results?query=${encodeURIComponent(query)}`);
   }
 
