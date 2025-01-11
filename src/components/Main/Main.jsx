@@ -1,7 +1,18 @@
 import "./Main.css";
 import childCareImg from "../../assets/childcare-pic.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Main() {
+
+
+  const navigate = useNavigate();
+
+
+function handleResultClick(path) {
+  navigate(path);
+}
+
+
   return (
     <main className="main">
       <section className="main__intro">
@@ -18,7 +29,6 @@ function Main() {
             <h1 className="main__intro-heading">
               Promoting Quality in Early Childhood Care and Education
             </h1>
-            <button className="main__intro-btn">Read more</button>
           </div>
         </div>
       </section>
@@ -38,7 +48,7 @@ function Main() {
             <p className="main__childcare-text">
               Childcare resources, food access, and workshop series information
             </p>
-            <button className="main__childcare-btn">Learn more</button>
+            <button onClick={() => handleResultClick("/parents")} className="main__childcare-btn" >Learn more</button>
           </div>
           <div className="main__childcare-card main__childcare-green">
             <img
@@ -51,7 +61,7 @@ function Main() {
               Online trainings, upcoming training opportunities, and
               certifications offered
             </p>
-            <button className="main__childcare-btn btn-green">
+            <button onClick={() => handleResultClick("/partners")} className="main__childcare-btn btn-green">
               Learn more
             </button>
           </div>
