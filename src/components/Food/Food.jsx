@@ -50,14 +50,7 @@ function Food() {
         <p className="food__map-text">
           TO ACCESS THE NEW SURRY & SUSSEX FOOD RESOURCES MAP!
         </p>
-        <div className="food__map-suffex">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d65369183.36050215!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8805ab1aa0009737%3A0x3f0127d1bc3e2d58!2sSussex%20Outreach%20Services!5e0!3m2!1sen!2sus!4v1736387965149!5m2!1sen!2sus"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="food__map-iframe"
-          ></iframe>
+        <div className="food__map">
           <img
             src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Hopewell-Petersburg-Food-Assist-Directory-2-994x1536.png"
             alt="Food assistance flyer"
@@ -68,19 +61,12 @@ function Food() {
         <p className="food__map-text">
           TO ACCESS THE NEW SURRY & SUSSEX FOOD RESOURCES MAP!
         </p>
-        <div className="food__map-hopewell">
+        <div className="food__map">
           <img
             src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Food-Assistance-PNG.png"
             alt="Food assistance flyer"
             className="food__map-flyer"
           />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.7376463990654!2d-77.2976039234675!3d37.30135123928877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b10751cb08d8ad%3A0xdfe4808416b57750!2s903%20W%20City%20Point%20Rd%2C%20Hopewell%2C%20VA%2023860!5e0!3m2!1sen!2sus!4v1736387922788!5m2!1sen!2sus"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="food__map-iframe"
-          ></iframe>
         </div>
       </section>
     </main>
