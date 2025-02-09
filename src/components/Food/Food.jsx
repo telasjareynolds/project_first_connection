@@ -42,11 +42,6 @@ function Food() {
               </div>
             </div>
           </div>
-          <img
-            src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Final-Early-Childhood-Health-Fair-Flyer-.png"
-            alt=""
-            className="food__intro-flyer"
-          />
         </div>
       </section>
 

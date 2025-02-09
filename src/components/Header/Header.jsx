@@ -82,6 +82,13 @@ function Header({ onSearch }) {
                 Childcare Professionals
               </Link>
               <Link
+                to="/food"
+                onClick={closeMenu}
+                className="header__link-mobile"
+              >
+                Food Security
+              </Link>
+              <Link
                 to="/partners"
                 onClick={closeMenu}
                 className="header__link-mobile"
@@ -101,13 +108,6 @@ function Header({ onSearch }) {
                 className="header__link-mobile"
               >
                 Privacy Policy
-              </Link>
-              <Link
-                to="/food"
-                onClick={closeMenu}
-                className="header__link-mobile"
-              >
-                Food Security
               </Link>
             </div>
           </>
@@ -135,6 +135,9 @@ function Header({ onSearch }) {
           <Link to="/professionals" className="header__link">
             Childcare Professionals
           </Link>
+          <Link to="/food" className="header__link">
+            Food Security
+          </Link>
           <Link to="/partners" className="header__link">
             Partners
           </Link>
@@ -143,9 +146,6 @@ function Header({ onSearch }) {
           </Link>
           <Link to="/privacy" className="header__link">
             Privacy Policy
-          </Link>
-          <Link to="/food" className="header__link">
-            Food Security
           </Link>
         </div>
         <SearchForm onSearch={onSearch} />

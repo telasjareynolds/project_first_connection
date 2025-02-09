@@ -23,8 +23,8 @@ function Contact() {
         <div className="contact__info-cards">
         <div className="contact__info-card">
           <h3 className="contact__info-card-heading">Reach us here</h3>
-          <p className="contact__info-card-text">804.458.6329 (ext. 2022) | 804.452.0909 <br></br>
-          ksloan@arls.org</p>
+          <p className="contact__info-card-text"> 804-314-3497<br></br>
+          anoble@arls.org</p>
           </div>
           <div className="contact__info-card">
           <h3 className="contact__info-card-heading">Address</h3>

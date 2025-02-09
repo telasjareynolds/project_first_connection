@@ -30,15 +30,17 @@ function Footer() {
               alt="location pin icon"
               className="footer__icon"
             />
-            <p className="footer__card-text">Hopewell, Virginia 23860</p>
+            <p className="footer__card-text">
+              209 E Cawson Street Hopewell, VA 23860
+            </p>
           </div>
           <div className="footer__card-container">
             <img src={phoneIcon} alt="Phone icon" className="footer__icon" />
-            <p className="footer__card-text">804.458.6329 (ext. 2022)</p>
+            <p className="footer__card-text">804-314-3497</p>
           </div>
           <div className="footer__card-container">
             <img src={mailIcon} alt="email icon" className="footer__icon" />
-            <p className="footer__card-text">ksloan@arls.org</p>
+            <p className="footer__card-text">anoble@arls.org</p>
           </div>
         </div>
         <div className="footer__card">

@@ -55,18 +55,14 @@
 .food__intro-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-}
-
-.food__intro-flyer {
-  height: 90%;
-  margin: 20px;
+  justify-content: space-around;
 }
 
 .food__intro-list {
   margin: 0;
   padding: 0;
   color: white;
+  list-style-type: none;
 }
 
 .food__intro-list-item {
@@ -157,7 +153,7 @@
   margin: 0;
   text-align: center;
   font-size: 15px;
-  color: #36AD47;
+  color: #36ad47;
   font-weight: 600;
   line-height: 21px;
 }
@@ -178,10 +174,12 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .food__intro-content {
+    gap: 50px;
+  }
+
   .food__intro-container {
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+    gap: 50px;
   }
 
   .food__intro-heading {
@@ -193,12 +191,18 @@
 
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
+  .food__intro-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .food__intro {
     min-height: fit-content;
   }
 
   .food__intro-img {
-    height: 113vh;
+    height: 60vh;
     background-size: cover;
   }
 
@@ -220,13 +224,6 @@
     margin-bottom: 20px;
     color: white;
     font-weight: bold;
-  }
-
-  .food__intro-flyer {
-    width: 60%;
-    height: 50%;
-    margin: 0 20px 20px;
-    border-radius: 16px;
   }
 
   .food__intro-list {
@@ -270,7 +267,7 @@
     flex-direction: column;
     padding: 0;
   }
-  
+
   .food__map-hopewell {
     flex-direction: column;
     padding: 10px 0 0;
@@ -285,6 +282,14 @@
 }
 
 @media screen and (max-width: 550px) {
+  .food__intro-img {
+    height: 72vh;
+  }
+
+  .food__intro-heading {
+    margin: 0;
+  }
+
   .food__intro-flyer {
     width: 80%;
     height: 40%;
