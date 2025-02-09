@@ -50,24 +50,23 @@ function Food() {
         <p className="food__map-text">
           TO ACCESS THE NEW SURRY & SUSSEX FOOD RESOURCES MAP!
         </p>
-        <div className="food__map">
-          <img
-            src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Hopewell-Petersburg-Food-Assist-Directory-2-994x1536.png"
-            alt="Food assistance flyer"
-            className="food__map-flyer"
-          />
-        </div>
+
+        <img
+          src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Hopewell-Petersburg-Food-Assist-Directory-2-994x1536.png"
+          alt="Food assistance flyer"
+          className="food__map-flyer"
+        />
+
         <h3 className="food__map-heading">SCAN HERE</h3>
         <p className="food__map-text">
           TO ACCESS THE NEW SURRY & SUSSEX FOOD RESOURCES MAP!
         </p>
-        <div className="food__map">
-          <img
-            src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Food-Assistance-PNG.png"
-            alt="Food assistance flyer"
-            className="food__map-flyer"
-          />
-        </div>
+
+        <img
+          src="https://firstconnectionsva.yobo.dev/wp-content/uploads/2023/11/Food-Assistance-PNG.png"
+          alt="Food assistance flyer"
+          className="food__map-flyer"
+        />
       </section>
     </main>
   );
